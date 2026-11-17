@@ -1,5 +1,7 @@
 # narya-mcp
 
+[Research page at Formalized](https://formalized.si/projects/narya-mcp/)
+
 An [MCP](https://modelcontextprotocol.io/) server for the [Narya](https://github.com/gwaithimirdain/narya) proof
 assistant. It lets LLM agents typecheck Narya files and develop proofs interactively: load a file into a live Narya
 process, inspect the holes (`?`) with their contexts and types, split holes, check candidate terms, solve holes,
@@ -14,7 +16,7 @@ The design follows [rocq-mcp](https://github.com/LLM4Rocq/rocq-mcp).
 Requirements: Narya, Python 3.12+ and [uv](https://docs.astral.sh/uv/).
 
 ```sh
-git clone https://github.com/balalaika-ai/narya-mcp && cd narya-mcp
+git clone https://github.com/formalized-si/narya-mcp && cd narya-mcp
 uv tool install --editable .        # installs the narya-mcp command
 uv run pytest                       # unit tests; with NARYA_BIN=/path/to/narya also the end-to-end tests
 ```
